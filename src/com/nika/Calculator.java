@@ -21,17 +21,17 @@ public class Calculator {
         this.secondParameter = secondParameter;
     }
 
-    public char getOperation() {
+    public String getOperation() {
         return operation;
     }
 
-    public void setOperation(char operation) {
+    public void setOperation(String operation) {
         this.operation = operation;
     }
 
     private double firstParameter;
     private double secondParameter;
-    private char operation;
+    private String operation;
 
 
     public Calculator(double firstParameter, double secondParameter) {

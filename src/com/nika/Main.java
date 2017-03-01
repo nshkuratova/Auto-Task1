@@ -12,6 +12,7 @@ public class Main {
         calc.setFirstParameter(scanner.nextDouble());
 
         System.out.print("Select operation (): ");
+        calc.setOperation(scanner.next());
 
         System.out.print("Insert second parameter: ");
         calc.setSecondParameter(scanner.nextDouble());
