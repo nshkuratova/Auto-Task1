@@ -13,13 +13,13 @@ public class Main {
         System.out.print("Insert first parameter: ");
         firstPar = scanner.nextDouble();
 
-        System.out.print("Select operation (): ");
+        System.out.print("Select operation (+, -, /, *): ");
         calc.setOperation(scanner.next());
 
         System.out.print("Insert second parameter: ");
         secondPar = scanner.nextDouble();
 
-        System.out.println(calc.add(firstPar, secondPar));
+        System.out.println("Result:" + calc.add(firstPar, secondPar));
 
     }
 }
