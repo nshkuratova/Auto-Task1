@@ -5,6 +5,18 @@ package com.nika;
  */
 public class Calculator {
 
+    private double firstParameter;
+    private double secondParameter;
+    private String operation;
+
+    public Calculator(double firstParameter, double secondParameter) {
+        this.firstParameter = firstParameter;
+        this.secondParameter = secondParameter;
+    }
+
+    public Calculator() {
+    }
+
     public double getFirstParameter() {
         return firstParameter;
     }
@@ -29,20 +41,20 @@ public class Calculator {
         this.operation = operation;
     }
 
-    private double firstParameter;
-    private double secondParameter;
-    private String operation;
 
-
-    public Calculator(double firstParameter, double secondParameter) {
-        this.firstParameter = firstParameter;
-        this.secondParameter = secondParameter;
-    }
-
-    public Calculator () {
-    }
-
-    public double add (double firstParameter, double secondParameter) {
+    public double add(double firstParameter, double secondParameter) {
         return firstParameter + secondParameter;
+    }
+
+    public double subtract(double firstParameter, double secondParameter) {
+        return firstParameter - secondParameter;
+    }
+
+    public double divide(double firstParameter, double secondParameter) {
+        return firstParameter / secondParameter;
+    }
+
+    public double multiply(double firstParameter, double secondParameter) {
+        return firstParameter * secondParameter;
     }
 }
