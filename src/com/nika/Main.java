@@ -9,6 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Calculator calc = new Calculator();
         double result = 0;
+        String operation = "";
 
         while (true) {
             try {
@@ -16,12 +17,12 @@ public class Main {
                 calc.setFirstParameter(scanner.nextDouble());
 
                 System.out.print("Select operation (+, -, /, *): ");
-                calc.setOperation(scanner.next());
+                operation = scanner.next();
 
                 System.out.print("Insert second parameter: ");
                 calc.setSecondParameter((scanner.nextDouble()));
 
-                switch (calc.getOperation()) {
+                switch (operation) {
                     case "+":
                         result = calc.add(calc.getFirstParameter(), calc.getSecondParameter());
                         break;
@@ -47,7 +48,7 @@ public class Main {
 
             } catch (InputMismatchException e) {
                 System.out.println("Error: wrong type of parameter");
-                scanner.next();
+                scanner.nextLine();
             }
         }
 

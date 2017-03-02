@@ -7,12 +7,6 @@ public class Calculator {
 
     private double firstParameter;
     private double secondParameter;
-    private String operation;
-
-    public Calculator(double firstParameter, double secondParameter) {
-        this.firstParameter = firstParameter;
-        this.secondParameter = secondParameter;
-    }
 
     public Calculator() {
     }
@@ -32,15 +26,6 @@ public class Calculator {
     public void setSecondParameter(double secondParameter) {
         this.secondParameter = secondParameter;
     }
-
-    public String getOperation() {
-        return operation;
-    }
-
-    public void setOperation(String operation) {
-        this.operation = operation;
-    }
-
 
     public double add(double firstParameter, double secondParameter) {
         return firstParameter + secondParameter;
